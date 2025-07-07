@@ -5,9 +5,10 @@ This project focuses on building a robust **fraud detection model** capable of i
 ## 🔍 Project Overview
 
 - Developed a **fraud detection system** using:
-  - **Support Vector Machine (SVM)**
-  - **Decision Tree Classifier**
-  - **Linear Regression**
+  - **Bi-Directional LSTM**
+  - **Random Forest Classifier**
+  - **Logistic Regression**
+  - **Feed Forward Neural Network**
 - Achieved:
   - ✅ **99% Accuracy**
   - ✅ **91.5% Precision**
