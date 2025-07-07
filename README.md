@@ -65,8 +65,8 @@ The best performance was achieved using **BiLSTM**:
 ## 🚀 How to Run
 
 1. Clone the repository:
-   git clone https://github.com/your-username/ddos-fraud-detection.git
-   cd ddos-fraud-detection
+   git clone https://github.com/kn-vashishtha/DDOS_Attack_Detection.git
+   cd DDOS_Attack_Detection
 2. Install the required dependencies:
     pip install -r requirements.txt
 3. Place the downloaded datasets inside the data/ folder:
