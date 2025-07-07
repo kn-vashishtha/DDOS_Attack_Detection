@@ -1,26 +1,20 @@
-# 🛡️ DDoS Attack Detection using Machine Learning
+🛡️ DDoS Attack Detection using Machine Learning
 
-This project focuses on building a robust **fraud detection model** capable of identifying malicious patterns in network traffic or financial transactions using **machine learning algorithms**. It is inspired by credit card fraud detection and adapted to detect **DDoS-style anomalies** in structured datasets.
+This project presents a robust machine learning and deep learning-based system to detect Distributed Denial of Service (DDoS) attacks in network traffic data. Leveraging multiple algorithms, it identifies malicious patterns with high precision and recall, making it suitable for real-world intrusion detection use cases.
 
 ## 🔍 Project Overview
 
-- Developed a **fraud detection system** using:
-  - **Bi-Directional LSTM**
-  - **Random Forest Classifier**
-  - **Logistic Regression**
-  - **Feed Forward Neural Network**
-- Achieved:
-  - ✅ **99% Accuracy**
-  - ✅ **91.5% Precision**
-  - ✅ **79.2% Recall**
-- Applied:
-  - **Feature engineering**
-  - **Data preprocessing**
-  - Techniques to handle **imbalanced datasets**, significantly reducing false positives.
+- Developed a machine learning-based system to detect DDoS attacks using a dataset of **4.5 lakh entries**, split into **60% testing and 40% training**.
+- Applied advanced **data preprocessing**, **feature engineering**, and techniques to address **class imbalance**.
+- Trained and compared multiple models including:
+  - 🔁 **Bi-directional LSTM (BiLSTM)**
+  - 🌲 **Random Forest Classifier**
+  - 🧠 **Feedforward Neural Network (FFNN)**
+  - ➕ **Logistic Regression**
 
 ## 📊 Dataset
 
-This project uses two separate CSV datasets:
+The project uses two CSV files:
 
 - 🔹 **Normal Traffic Dataset**  
   [Download from Google Drive](https://drive.google.com/file/d/1jVNPZb50zhlaIlfd2ef6KUeLdtYYCR5i/view?usp=sharing)
@@ -28,7 +22,7 @@ This project uses two separate CSV datasets:
 - 🔹 **DDoS Attack Traffic Dataset**  
   [Download from Google Drive](https://drive.google.com/file/d/16Osj3lbds0ibQNuClMAX91f0YcQrzXSV/view?usp=sharing)
 
-> ⚠️ These datasets are not stored in the repository due to size limits. Please download them manually and place them in the `/data/` folder.
+> ⚠️ These files are not included in the repository due to size constraints. Please download and place them in the `data/` directory.
 
 ## 📁 Project Structure
 
@@ -36,20 +30,38 @@ This project uses two separate CSV datasets:
 ├── data/
 │ ├── normal.csv
 │ └── attack.csv
-├── fraud_detection_model.ipynb
+├── ddos_detection_model.ipynb
 ├── requirements.txt
 └── README.md
 
-
 ## ⚙️ Features
 
-- Data loading and preprocessing (handling missing values, encoding)
-- Feature selection & dimensionality reduction (if applicable)
-- Model training and evaluation with:
-  - Confusion matrix
-  - Accuracy, precision, recall scores
-- Visualizations of data distribution and results
+- Data preprocessing: handling missing values, encoding, normalization
+- Feature selection and reduction
+- Class balancing techniques (e.g., under-sampling, SMOTE if applicable)
+- Model training, evaluation, and comparison
+- Metrics visualization: accuracy, precision, recall, confusion matrix
 
+## 🧠 Algorithms Used
+
+| Algorithm                | Type            |
+|--------------------------|------------------|
+| Bi-directional LSTM      | Deep Learning    |
+| Random Forest Classifier | Ensemble Learning|
+| Feedforward Neural Net   | Deep Learning    |
+| Logistic Regression      | Traditional ML   |
+
+## 📈 Results
+
+The best performance was achieved using **BiLSTM**:
+
+| Metric     | Value    |
+|------------|----------|
+| Accuracy   | 98.12%   |
+| Precision  | 96.81%   |
+| Recall     | 99.51%   |
+
+> ✅ These results indicate strong detection performance and low false negatives — crucial for DDoS prevention systems.
 ## 🚀 How to Run
 
 1. Clone the repository:
